@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste java   </title>
+    <style>
+       div#area{
+        text-align: center;
+        color: white;
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+
+
+       } 
+
+
+    </style>
 </head>
 <body>
     <h1>Olá munddsosss!! </h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Maxime veniam, aperiam officia aspernatur minima accusamus iure voluptatum quo commodi? Accusamus earum nostrum illo sunt alias quasi quaerat quos non incidunt!</p>
     
+       <div id="area">Interaja</div>
+
+        <script>
+            var a = window.document.getElementById('area')
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', sair)
+
+
+
+
+            function clicar(){
+                var a = window.document.getElementById('area')
+                a.innerText='clicou'
+                a.style.background ='red'
+            }
+            function entrar(){
+                a.innerText='Entrou'
+
+            }
+            function sair(){
+                a.innerText='Saiu'
+                a.style.background ='blue'
+
+}
+
+        </script>
 </body>
 </html>
